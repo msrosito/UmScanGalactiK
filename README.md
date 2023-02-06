@@ -48,7 +48,7 @@ In this repository, an implementation of UmScanGalactiK is presented along with 
 
 ## Kinematic map examples
 
-<img src = "input_examples/vLOS_gr_38i_90.png" width = 23% height = 23%> <img src = "input_examples/input_examples/vLOS_gr_41i_90.png" width = 23% height = 23%> <img src = "input_examples/vLOS_gr_46i_90.png" width = 23% height = 23%>
+<img src = "input_examples/vLOS_gr_38i_90.png" width = 27% height = 27%> <img src = "input_examples/vLOS_gr_41i_90.png" width = 27% height = 27%> <img src = "input_examples/vLOS_gr_46i_90.png" width = 27% height = 27%>
 
 <img src = "input_examples/dispersion_gr_38i_90.png" width = 23% height = 23%> <img src = "input_examples/dispersion_gr_41i_90.png" width = 23% height = 23%> <img src = "input_examples/dispersion_gr_46i_90.png" width = 23% height = 23%>
 
