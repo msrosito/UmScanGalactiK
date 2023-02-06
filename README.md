@@ -2,13 +2,13 @@
 
 UmScanGalactiK is a method that automatically classifies kinematic maps of galaxies by combining dimensionality reduction (UMAP) and clustering (HDBSCAN) algorithms. This method has been proven to yield a meaningful classification when fed with kinematic maps built from stellar particle information from a cosmological numerical simulation of the EAGLE project. The kinematic maps mimic images obtained through integral-field spectroscopy techniques.
 
-Please, if you use UmScanGalactiK, cite our publication: [BibTeX](https://ui.adsabs.harvard.edu/abs/2022arXiv221203999R/exportcitation)]. If you like this repository, consider giving it a star.
+Please, if you use UmScanGalactiK, cite our publication: [BibTeX](https://ui.adsabs.harvard.edu/abs/2022arXiv221203999R/exportcitation). If you like this repository, consider giving it a star.
 
 ## UmScanGalactiK code and example
 
 In this repository, an implementation of UmScanGalactiK is presented along with a concrete example demonstrating its applicability and usefulness. This limited example aims to illustrate the method and the subsequent statistical analysis of data-driven clustering required to draw robust conclusions. I provide the particular input needed to reproduce three panels of Fig. 6. of Rosito et al. (2022), publicated in Astronomy & Astrophysics (see below) and to obtain some of the results in Sec. 5 of the same publication. The input consists of a set of kinematic maps for galaxies observed at 90 degrees inclinations and the values of their triaxiality parameter, $T$. The ouput includes the unsupervised groups obtained through UmScanGalactiK and the analysis of the distributions of $T$ within the clusters and the quantitative comparison between two of these distributions.
 
-<img src = "example/UmScanGalactiK_i90_clusters.png" width = 30% height = 30%> <img src = "example/UmScanGalactiK_i90_T.png" width = 30% height = 30%> <img src = "example/PDFs_i90_T.png" width = 30% height = 30%>
+<img src = "example/UmScanGalactiK_i90_clusters.png" width = 33% height = 33%> <img src = "example/UmScanGalactiK_i90_T.png" width = 33% height = 33%> <img src = "example/PDFs_i90_T.png" width = 33% height = 33%>
 
 ## Instructions to run the example
 
@@ -17,7 +17,7 @@ In this repository, an implementation of UmScanGalactiK is presented along with 
     - UMAP installation instructions: https://pypi.org/project/umap-learn/
     - HDBSCAN installation instructions: https://pypi.org/project/hdbscan/
     - loess: I include in the folder "src" the version of loess that I am using to smooth the scatter plots. For information on the current version of this library, check the following link: https://pypi.org/project/loess/
-- Run the "example.py" script from the "src" folder.
+3. Run the "example.py" script from the "src" folder.
 
 ##  Scientifc References
 
@@ -45,3 +45,11 @@ In this repository, an implementation of UmScanGalactiK is presented along with 
 ### Smoothing via robust locally-weighted regression in one or two dimensions: LOESS
 
 - "The ATLAS3D project – XX. Mass–size and mass–σ distributions of early-type galaxies: bulge fraction drives kinematics, mass-to-light ratio, molecular gas fraction and stellar initial mass function". Authors: M. Cappellari, R. M. McDermid, K. Alatalo, L. Blitz, M. Bois, F. Bournaud, M. Bureau, A. F. Crocker, R. L. Davies, T. A. Davis, P. T. de Zeeuw, P. Duc, E. Emsellem, S. Khochfar, D. Krajnović, H. Kuntschner, R. Morganti, T. Naab, T. Oosterloo, M. Sarzi, N. Scott, P. Serra, A. Weijmans, L. M. Young. Monthly Notices of the Royal Astronomical Society, 2013 [[DOI]](https://academic.oup.com/mnras/article/432/3/1862/1750208?login=false). Python library [LOESS](https://pypi.org/project/loess/). 
+
+## Kinematic map examples
+
+<img src = "input_examples/vLOS_gr_38i_90.pdf" width = 33% height = 33%> <img src = "input_examples/input_examples/vLOS_gr_41i_90.pdf" width = 33% height = 33%> <img src = "input_examples/vLOS_gr_38i_90.pdf" width = 33% height = 33%>
+
+<img src = "input_examples/dispersion_gr_38i_90.pdf" width = 33% height = 33%> <img src = "input_examples/dispersion_gr_41i_90.pdf" width = 33% height = 33%> <img src = "input_examples/dispersion_gr_38i_90.pdf" width = 33% height = 33%>
+
+<img src = "input_examples/flux_gr_38i_90.pdf" width = 33% height = 33%> <img src = "input_examples/flux_gr_41i_90.pdf" width = 33% height = 33%> <img src = "input_examples/flux_gr_38i_90.pdf" width = 33% height = 33%>
