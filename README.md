@@ -2,9 +2,22 @@
 
 UmScanGalactiK is a method that automatically classifies kinematic maps of galaxies by combining dimensionality reduction (UMAP) and clustering (HDBSCAN) algorithms. This method has been proven to yield a meaningful classification when fed with kinematic maps built from stellar particle information from a cosmological numerical simulation of the EAGLE project. The kinematic maps mimic images obtained through integral-field spectroscopy techniques.
 
+Please, if you use UmScanGalactiK, cite our publication: [BibTeX](https://ui.adsabs.harvard.edu/abs/2022arXiv221203999R/exportcitation)]. If you like this repository, consider giving it a star.
+
 ## UmScanGalactiK code and example
 
-In this repository, an implementation of UmScanGalactiK is presented along with a concrete example demonstrating its applicability and usefulness. This limited example aims to illustrate the method and the subsequent statistical analysis of data-driven clustering required to draw robust conclusions. I provide the particular input to reproduce three panels of Fig. 6. of Rosito et al. (2022), publicated in Astronomy & Astrophysics (see below), in addition to reporting some of the results in Sec. 5 of the same publication. The input consists of a set of kinematic maps for galaxies observed at 90 degrees inclinations and the values of their triaxiality parameter, $T$. The ouput includes the unsupervised groups obtained through UmScanGalactiK and the analysis of the distributions of $T$ within the clusters and the quantitative comparison between two of these distributions.
+In this repository, an implementation of UmScanGalactiK is presented along with a concrete example demonstrating its applicability and usefulness. This limited example aims to illustrate the method and the subsequent statistical analysis of data-driven clustering required to draw robust conclusions. I provide the particular input needed to reproduce three panels of Fig. 6. of Rosito et al. (2022), publicated in Astronomy & Astrophysics (see below) and to obtain some of the results in Sec. 5 of the same publication. The input consists of a set of kinematic maps for galaxies observed at 90 degrees inclinations and the values of their triaxiality parameter, $T$. The ouput includes the unsupervised groups obtained through UmScanGalactiK and the analysis of the distributions of $T$ within the clusters and the quantitative comparison between two of these distributions.
+
+![](https://github.com/msrosito/UmScanGalactiK/blob/main/example/UmScanGalactiK_i90_clusters.png)
+
+## Instructions to run the example
+
+1. Download this repository
+2. Install specific libraries
+    - UMAP installation instructions: https://pypi.org/project/umap-learn/
+    - HDBSCAN installation instructions: https://pypi.org/project/hdbscan/
+    - loess: I include in the folder "src" the version of loess that I am using to smooth the scatter plots. For information on the current version of this library, check the following link: https://pypi.org/project/loess/
+- Run the "example.py" script from the "src" folder.
 
 ##  Scientifc References
 
@@ -14,15 +27,15 @@ In this repository, an implementation of UmScanGalactiK is presented along with 
 
 ### Dimensionality reduction algorithm: UMAP
 
-- "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction". Authors: L. McInnes, J. Healy. ArXiv e-prints, 2018 [[arXiv]](https://arxiv.org/abs/1802.03426). Python library publicy available in [GitHub](https://github.com/lmcinnes/umap).
+- "UMAP: Uniform Manifold Approximation and Projection for Dimension Reduction". Authors: L. McInnes, J. Healy. ArXiv e-prints, 2018 [[arXiv]](https://arxiv.org/abs/1802.03426). Python library publicy available on [GitHub](https://github.com/lmcinnes/umap).
 
 ### Clustering algorithm: HDBSCAN
 
-- "Density-Based Clustering Based on Hierarchical Density Estimates". Authors: R. J. G. B. Campello, D. Moulavi, D., Sander, J. in Advances in Knowledge Discovery and Data Mining. J. Pei, V. S. Tseng, L. Cao, H. Motoda, G. Xu (eds), 2013 [[DOI]](https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14). Python library publicy available in [GitHub](https://github.com/scikit-learn-contrib/hdbscan).
+- "Density-Based Clustering Based on Hierarchical Density Estimates". Authors: R. J. G. B. Campello, D. Moulavi, D., Sander, J. in Advances in Knowledge Discovery and Data Mining. J. Pei, V. S. Tseng, L. Cao, H. Motoda, G. Xu (eds), 2013 [[DOI]](https://link.springer.com/chapter/10.1007/978-3-642-37456-2_14). Python library publicy available on [GitHub](https://github.com/scikit-learn-contrib/hdbscan).
 
 ### Tool used to built the kinematic maps: SimSpin
 
-- "SIMSPIN - Constructing mock IFS kinematic data cubes". Authors: K. E. Harborne, C .Power and A. S. G. Robotham. Publications of the Astronomical Society of Australia, 2020 [[DOI]](https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/simspinconstructing-mock-ifs-kinematic-data-cubes/BA50F93F6F487ECE9E50773ECF0CB3F1). R library publicy available in [GitHub](https://github.com/kateharborne/SimSpin).
+- "SIMSPIN - Constructing mock IFS kinematic data cubes". Authors: K. E. Harborne, C .Power and A. S. G. Robotham. Publications of the Astronomical Society of Australia, 2020 [[DOI]](https://www.cambridge.org/core/journals/publications-of-the-astronomical-society-of-australia/article/simspinconstructing-mock-ifs-kinematic-data-cubes/BA50F93F6F487ECE9E50773ECF0CB3F1). R library publicy available on [GitHub](https://github.com/kateharborne/SimSpin).
 
 ### The EAGLE project
 
