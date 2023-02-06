@@ -8,7 +8,8 @@ Please, if you use UmScanGalactiK, cite our publication: [BibTeX](https://ui.ads
 
 In this repository, an implementation of UmScanGalactiK is presented along with a concrete example demonstrating its applicability and usefulness. This limited example aims to illustrate the method and the subsequent statistical analysis of data-driven clustering required to draw robust conclusions. I provide the particular input needed to reproduce three panels of Fig. 6. of Rosito et al. (2022), publicated in Astronomy & Astrophysics (see below) and to obtain some of the results in Sec. 5 of the same publication. The input consists of a set of kinematic maps for galaxies observed at 90 degrees inclinations and the values of their triaxiality parameter, $T$. The ouput includes the unsupervised groups obtained through UmScanGalactiK and the analysis of the distributions of $T$ within the clusters and the quantitative comparison between two of these distributions.
 
-![](example/UmScanGalactiK_i90_clusters.png width = 28%)
+<img src = "example/UmScanGalactiK_i90_clusters.png" width=50% height=50%>
+
 ![](example/UmScanGalactiK_i90_T.png width = 28%)
 ![](example/PDFs_i90_T.png width = 28%)
 
